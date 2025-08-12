@@ -1,0 +1,105 @@
+<!-- admin-dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | CarPoolNow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .sidebar {
+      height: 100vh;
+      background-color: #343a40;
+      color: white;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+    }
+    .sidebar a:hover {
+      background-color: #495057;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 col-lg-2 sidebar">
+        <h4 class="text-center">Admin Panel</h4>
+        <hr>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="admin-users.html">Manage Users</a>
+        <a href="admin-journeys.html">View Journeys</a>
+        <a href="admin-routes.html">Manage Routes</a>
+        <a href="admin-messages.html">Messages</a>
+        <a href="admin-logout.html">Logout</a>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-9 col-lg-10 p-4">
+        <h2>Welcome, Admin</h2>
+        <p class="text-muted">Overview of system status</p>
+
+        <div class="row text-center mt-4">
+          <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Total Users</h5>
+                <p class="card-text fs-4">125</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Active Rides</h5>
+                <p class="card-text fs-4">42</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white bg-warning mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Pending Requests</h5>
+                <p class="card-text fs-4">7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="mt-5">Recent Journeys</h4>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Driver</th>
+              <th>From → To</th>
+              <th>Date</th>
+              <th>Seats</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Faizan S.</td>
+              <td>Ahmedabad → Surat</td>
+              <td>2025-08-05</td>
+              <td>2</td>
+              <td><span class="badge bg-success">Active</span></td>
+            </tr>
+            <tr>
+              <td>Reema P.</td>
+              <td>Rajkot → Vadodara</td>
+              <td>2025-08-07</td>
+              <td>3</td>
+              <td><span class="badge bg-secondary">Completed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

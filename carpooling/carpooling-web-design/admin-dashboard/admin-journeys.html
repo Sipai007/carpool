@@ -1,0 +1,82 @@
+<!-- admin-journeys.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Journeys | CarPoolNow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .sidebar {
+      height: 100vh;
+      background-color: #343a40;
+      color: white;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+    }
+    .sidebar a:hover {
+      background-color: #495057;
+    }
+  </style>
+</head>
+<body>
+     <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 col-lg-2 sidebar">
+        <h4 class="text-center">Admin Panel</h4>
+        <hr>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="admin-users.html">Manage Users</a>
+        <a href="admin-journeys.html">View Journeys</a>
+        <a href="admin-routes.html">Manage Routes</a>
+        <a href="admin-messages.html">Messages</a>
+        <a href="admin-logout.html">Logout</a>
+
+          </div>
+
+<div class="col-md-10 mt-4">
+  <h2 class="mb-4">All Journey Listings</h2>
+  <table class="table table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Posted By</th>
+        <th>From</th>
+        <th>To</th>
+        <th>Date</th>
+        <th>Seats</th>
+        <th>Contribution</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>Faizan Sipai (Driver)</td>
+        <td>Ahmedabad</td>
+        <td>Gandhinagar</td>
+        <td>2025-08-01</td>
+        <td>3</td>
+        <td>₹50</td>
+        <td><span class="badge bg-success">Active</span></td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Reema Patel (Passenger)</td>
+        <td>Surat</td>
+        <td>Vadodara</td>
+        <td>2025-08-02</td>
+        <td>1</td>
+        <td>₹120</td>
+        <td><span class="badge bg-secondary">Completed</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
